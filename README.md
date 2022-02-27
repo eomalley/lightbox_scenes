@@ -1,7 +1,7 @@
 # lightbox_scenes
 quick and dirty application to drive an arduino controlling LEDs from a raspberry pi. 
 
-Application expects a few things: on the pi side 4 buttons, mp3 files for accompanying sound, and a connection to the arduino via usb.  For the arduino: LEDs compatible with FastLED and accurate number of LEDs, and the LEDs to be connected in a specific order (sort of like an S sideways).
+Application expects a few things: on the pi side 4 buttons, mp3 files for accompanying sound, and a connection to the arduino via usb.  For the arduino: LEDs compatible with FastLED, an accurate number of LEDs, and the LEDs to be connected in a specific order (sort of like an S sideways). Since the strips in my light box wrap, the code needs to reverse the pattern every row because the strips are continuous and connect to each other at the shortest point.
 
 Current setup loads a gradual sunrise theme that will continue to 100% brightness. At any time this can be stopped by pressing a button to select a new theme. 
 
